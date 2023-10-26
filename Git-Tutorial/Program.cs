@@ -49,6 +49,7 @@ static void GetAndDisplayCommands(List<GitEntry> gitCategorys)
     else
     {
         Console.WriteLine("Invalid category selection.");
+        GetAndDisplayCommands(gitCategorys);
     }
 }
 
