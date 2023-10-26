@@ -37,7 +37,7 @@ static void GetAndDisplayCommands(List<GitEntry> gitCategorys)
         if (ExitProgram())
         {
             Console.WriteLine("Exiting the application...");
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             Environment.Exit(0);
         }
         else
