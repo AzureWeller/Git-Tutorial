@@ -15,7 +15,7 @@ Console.ReadLine();
 
 static void DisplayCategories(List<GitEntry> gitCategorys)
 {
-    int categoryNumber = 1;
+    int categoryNumber = 2;
     foreach (var category in gitCategorys)
     {
         Console.WriteLine($"{categoryNumber}. {category.Title}");
