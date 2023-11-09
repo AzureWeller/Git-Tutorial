@@ -25,7 +25,7 @@ static void DisplayCategories(List<GitEntry> gitCategorys)
 
 static void GetAndDisplayCommands(List<GitEntry> gitCategorys)
 {
-    Console.Write("\nEnter the number of the category to see related Git commands:   ");
+    Console.Write("\nEnter the number of the category to see related Git commands: ");
     if (int.TryParse(Console.ReadLine(), out int selectedCategoryNumber) && selectedCategoryNumber >= 1 && selectedCategoryNumber <= gitCategorys.Count)
     {
         var selectedCategory = gitCategorys[selectedCategoryNumber - 1];
