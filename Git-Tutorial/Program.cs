@@ -15,7 +15,7 @@ Console.ReadLine();
 
 static void DisplayCategories(List<GitEntry> gitCategorys)
 {
-    int categoryNumber = 2;
+    int categoryNumber = 1;
     foreach (var category in gitCategorys)
     {
         Console.WriteLine($"{categoryNumber}. {category.Title}");
@@ -25,7 +25,7 @@ static void DisplayCategories(List<GitEntry> gitCategorys)
 
 static void GetAndDisplayCommands(List<GitEntry> gitCategorys)
 {
-    Console.Write("\nEnter the number of the category to see related Git commands: ");
+    Console.Write("\nEnter the number of the category to see related Git commands: ehiofjhwedklfhnwekjfhnwjkefhnkjwe");
     if (int.TryParse(Console.ReadLine(), out int selectedCategoryNumber) && selectedCategoryNumber >= 1 && selectedCategoryNumber <= gitCategorys.Count)
     {
         var selectedCategory = gitCategorys[selectedCategoryNumber - 1];
